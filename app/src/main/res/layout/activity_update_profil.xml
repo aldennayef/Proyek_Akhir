@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfil">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_pass_lama"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="7dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="GANTI KATA SANDI"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/edt_pass_lama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Masukkan Password Lama"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/edt_pass_baru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Masukkan Password Baru"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn_ganti_pass"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="GANTI PASSWORD"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
